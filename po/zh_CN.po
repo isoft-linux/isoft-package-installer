@@ -1,0 +1,330 @@
+# Chinese/Simplified translation of isoftpackageinstaller.
+# Copyright (C) 2015 Leslie Zhai <xiang.zhai@i-soft.com.cn>
+# This file is distributed under the same license as the isoftpackageinstaller package.
+# Leslie Zhai <xiang.zhai@i-soft.com.cn>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-10 10:11+0800\n"
+"PO-Revision-Date: 2015-11-17 15:00+0800\n"
+"Last-Translator: Leslie Zhai <xiang.zhai@i-soft.com.cn>\n"
+"Language-Team: Leslie Zhai <xiang.zhai@i-soft.com.cn>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ERROR: failed to create temporary directory"
+msgstr "错误: 创建临时目录失败"
+
+msgid "ERROR: failed to allocate memory"
+msgstr "错误: 分配内存失败"
+
+msgid "task locked"
+msgstr "任务被锁"
+
+msgid "NOTE: src.rpm will not be rebuilt to binary rpm"
+msgstr "注意: src.rpm不会被重新编译成rpm"
+
+#, c-format
+msgid "Missing '(' in %s %s\n"
+msgstr ""
+
+#, c-format
+msgid "Missing ')' in %s(%s\n"
+msgstr ""
+
+#, c-format
+msgid "Invalid %s token: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Missing %s in %s %s\n"
+msgstr ""
+
+#, c-format
+msgid "Non-white space follows %s(): %s\n"
+msgstr ""
+
+#, c-format
+msgid "Bad syntax: %s(%s)\n"
+msgstr ""
+
+#, c-format
+msgid "Bad mode spec: %s(%s)\n"
+msgstr ""
+
+#, c-format
+msgid "Bad dirmode spec: %s(%s)\n"
+msgstr ""
+
+#, c-format
+msgid "Unusual locale length: \"%s\" in %%lang(%s)\n"
+msgstr ""
+
+#, c-format
+msgid "Duplicate locale %s in %%lang(%s)\n"
+msgstr ""
+
+#, c-format
+msgid "Invalid capability: %s\n"
+msgstr ""
+
+#, c-format
+msgid "File must begin with \"/\": %s\n"
+msgstr ""
+
+#, c-format
+msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgstr ""
+
+#, c-format
+msgid "File listed twice: %s\n"
+msgstr ""
+
+#, c-format
+msgid "reading symlink %s failed: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Symlink points to BuildRoot: %s -> %s\n"
+msgstr ""
+
+#, c-format
+msgid "Path is outside buildroot: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Directory not found: %s\n"
+msgstr ""
+
+#, c-format
+msgid "File not found: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Not a directory: %s\n"
+msgstr ""
+
+#, c-format
+msgid "%s: can't load unknown tag (%d).\n"
+msgstr ""
+
+#, c-format
+msgid "%s: public key read failed.\n"
+msgstr ""
+
+#, c-format
+msgid "%s: not an armored public key.\n"
+msgstr ""
+
+#, c-format
+msgid "%s: failed to encode\n"
+msgstr ""
+
+#, c-format
+msgid "File needs leading \"/\": %s\n"
+msgstr ""
+
+#, c-format
+msgid "%%dev glob not permitted: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Directory not found by glob: %s. Trying without globbing.\n"
+msgstr ""
+
+#, c-format
+msgid "File not found by glob: %s. Trying without globbing.\n"
+msgstr ""
+
+#, c-format
+msgid "illegal _docdir_fmt %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Can't mix special %s with other forms: %s\n"
+msgstr ""
+
+#, c-format
+msgid "More than one file on a line: %s\n"
+msgstr ""
+
+#, c-format
+msgid "create archive failed on file %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "create archive failed: %s\n"
+msgstr ""
+
+#, c-format
+msgid "encoding %s not supported by system\n"
+msgstr ""
+
+#, c-format
+msgid "Package %s: invalid %s encoding in %s: %s - %s\n"
+msgstr ""
+
+#, c-format
+msgid "Unknown payload compression: %s\n"
+msgstr ""
+
+msgid "Unable to create immutable header region.\n"
+msgstr ""
+
+#, c-format
+msgid "Could not open %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Unable to write package: %s\n"
+msgstr ""
+
+msgid "Unable to write temp header\n"
+msgstr ""
+
+msgid "Bad CSA data\n"
+msgstr ""
+
+#, c-format
+msgid "Could not seek in file %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Fread failed in file %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Wrote: %s\n"
+msgstr ""
+
+msgid ""
+"Provides D-Bus interfaces for querying and manipulating\n"
+"iSOFT Install information."
+msgstr ""
+
+#, c-format
+msgid "Updating / installing...\n"
+msgstr "正在升级/安装...\n"
+
+#, c-format
+msgid "Cleaning up / removing...\n"
+msgstr "正在清理/删除...\n"
+
+msgid "Preparing..."
+msgstr "准备..."
+
+msgid "Preparing packages..."
+msgstr "准备安装包..."
+
+#, c-format
+msgid "ERROR: %s, %s, line %d: failed to allocate memory"
+msgstr "错误: %s, %s, %d行: 分配内存失败"
+
+#, c-format
+msgid "ERROR: %s, %s, line %d: failed to create rpm ts"
+msgstr "错误: %s, %s, %d行: 创建rpm任务失败"
+
+#, c-format
+msgid "Ignoring invalid regex %s\n"
+msgstr ""
+
+#, c-format
+msgid "Couldn't create pipe for %s: %m\n"
+msgstr ""
+
+#, c-format
+msgid "Couldn't exec %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Couldn't fork %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "%s failed: %x\n"
+msgstr ""
+
+#, c-format
+msgid "failed to write all data to %s: %s\n"
+msgstr ""
+
+msgid "bad operator"
+msgstr ""
+
+msgid "bad format"
+msgstr ""
+
+#, c-format
+msgid "invalid dependency (%s): %s\n"
+msgstr ""
+
+#, c-format
+msgid "Conversion of %s to long integer failed.\n"
+msgstr ""
+
+msgid "Empty file classifier\n"
+msgstr ""
+
+msgid "No file attributes configured\n"
+msgstr ""
+
+#, c-format
+msgid "magic_open(0x%x) failed: %s\n"
+msgstr ""
+
+#, c-format
+msgid "magic_load failed: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Recognition of file \"%s\" failed: mode %06o %s\n"
+msgstr ""
+
+msgid "Welcome to use iSOFT Package Installer"
+msgstr "欢迎使用普华软件包安装程序"
+
+msgid ""
+"<p style=\"line-height: 150%;\">iSOFT Package Installer provides easy and "
+"simple software install experience, it supports rpm and deb package. We have "
+"responsibility to remind you the package not built by iSOFT Linux "
+"distribution might not be installed successfully. Debian's package, will be "
+"converted to rpm, but never run its' post/prescript.</p>"
+msgstr ""
+"<p style=\"line-height: 150%;\">普华软件包安装程序会为用户提供方便简洁的软件"
+"安装体验，可以支持rpm和deb格式的软件包安装。我们有责任提示您，对于不是基于本"
+"发行版编译的软件包不一定能安装成功。针对Debian的软件包，我们将为您转换为系统"
+"支持的rpm包格式，但不会执行deb包里的前期/后期脚本，可能会有部分功能受到影响。</p>"
+
+msgid "The next time no longer appears"
+msgstr "下次不再出现此提示"
+
+msgid "Next"
+msgstr "下一步"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Please confirm the packages you want to install"
+msgstr "请确认要安装的软件包"
+
+msgid "Finish"
+msgstr "结束"
+
+msgid "Converting %1"
+msgstr "正在转换 %1"
+
+msgid "Installing %1"
+msgstr "正在安装 %1"
+
+msgid "%1 Converted"
+msgstr "%1 已转换"
+
+msgid "%1 Installed"
+msgstr "%1 已安装"
+
+msgid "iSOFT Package Installer"
+msgstr "普华软件包安装程序"

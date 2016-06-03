@@ -1,0 +1,14 @@
+[Unit]
+Description=iSOFT Install Service
+
+After=network.target
+Wants=network.target
+
+[Service]
+Type=dbus
+BusName=org.isoftlinux.Install
+ExecStart=@CMAKE_INSTALL_FULL_BINDIR@/isoft-install-daemon
+StandardOutput=syslog
+
+[Install]
+WantedBy=multi-user.target

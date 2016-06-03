@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-18 11:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, c-format
+msgid "conflict with %s"
+msgstr ""
+
+#, c-format
+msgid "%s is 32bit"
+msgstr ""
+
+msgid "failed to extract deb file"
+msgstr ""
+
+msgid "failed to open rpm osdb"
+msgstr ""
+
+msgid "failed to open rpm appdb"
+msgstr ""
+
+#, c-format
+msgid "failed dependencies: %s"
+msgstr ""
+
+msgid "failed to update rpm appdb"
+msgstr ""
+
+msgid "task locked"
+msgstr ""
+
+msgid ""
+"Provides D-Bus interfaces for querying and manipulating\n"
+"iSOFT Install information."
+msgstr ""
+
+#, c-format
+msgid "Updating / installing...\n"
+msgstr ""
+
+#, c-format
+msgid "Cleaning up / removing...\n"
+msgstr ""
+
+msgid "Preparing..."
+msgstr ""
+
+msgid "Preparing packages..."
+msgstr ""
+
+msgid "warning"
+msgstr ""
+
+msgid "Install Finished"
+msgstr ""
+
+msgid "Installing..."
+msgstr ""
+
+msgid "cancel"
+msgstr ""

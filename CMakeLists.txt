@@ -1,0 +1,71 @@
+project(isoftpackageinstaller)
+cmake_minimum_required(VERSION 2.8.12)
+
+set(PROJECT_NAME "isoftpackageinstaller")
+set(PROJECT_VERSION "1.0.0")
+set(GETTEXT_PACKAGE "isoftpackageinstaller")
+set(PROJECT_LOCALEDIR ${CMAKE_INSTALL_PREFIX}/share/locale)
+
+add_definitions(-Werror -DLIBDPKG_VOLATILE_API)
+add_definitions("-DPROJECT_NAME=\"${PROJECT_NAME}\"")
+add_definitions("-DPROJECT_VERSION=\"${PROJECT_VERSION}\"")
+add_definitions("-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\"")
+add_definitions("-DPROJECT_LOCALEDIR=\"${PROJECT_LOCALEDIR}\"")
+
+option(ENABLE_DEBUG "Enable debug" OFF)
+if(ENABLE_DEBUG)
+    add_definitions(-g -DDEBUG)
+endif()
+
+find_package(ECM 1.6.0 REQUIRED)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+find_package(PkgConfig REQUIRED)
+
+if(NOT NO_SYSTEMD)
+    pkg_check_modules(SYSTEMD "systemd")
+endif()
+
+if(SYSTEMD_FOUND)
+    add_definitions(-DHAVE_SYSTEMD)
+    set(CMAKE_AUTOMOC_MOC_OPTIONS -DHAVE_SYSTEMD)
+
+    if (NOT DEFINED SYSTEMD_SYSTEM_UNIT_DIR)
+        execute_process(COMMAND ${PKG_CONFIG_EXECUTABLE} --variable=systemdsystemunitdir systemd OUTPUT_VARIABLE SYSTEMD_SYSTEM_UNIT_DIR)
+        string(REGEX REPLACE "[ \t\n]+" "" SYSTEMD_SYSTEM_UNIT_DIR ${SYSTEMD_SYSTEM_UNIT_DIR})
+    endif()
+endif()
+
+pkg_check_modules(GLIB2 REQUIRED glib-2.0)
+pkg_check_modules(GIO2 REQUIRED gio-2.0)
+pkg_check_modules(GIOUNIX REQUIRED gio-unix-2.0)
+pkg_check_modules(ZLIB REQUIRED zlib)
+pkg_check_modules(LIBLZMA REQUIRED liblzma)
+pkg_check_modules(RPM REQUIRED rpm)
+pkg_check_modules(POPT REQUIRED popt)
+pkg_check_modules(LIBDPKG REQUIRED libdpkg)
+pkg_check_modules(LIBCAP REQUIRED libcap)
+
+find_package(bzip2 REQUIRED)
+find_package(elf REQUIRED)
+find_package(magic REQUIRED)
+find_package(Qt5 REQUIRED COMPONENTS Core Widgets DBus)
+find_package(KF5 REQUIRED COMPONENTS I18n)
+
+find_program(GDBUS_CODEGEN_EXECUTABLE NAMES gdbus-codegen DOC "gdbus-codegen executable")
+if(NOT GDBUS_CODEGEN_EXECUTABLE)
+    message(FATAL_ERROR "Executable gdbus-codegen not found")
+endif()
+
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(ECMInstallIcons)
+include(ECMMarkAsTest)
+include(FeatureSummary)
+
+add_subdirectory(daemon)
+add_subdirectory(greeter)
+add_subdirectory(tools)
+add_subdirectory(data)
+add_subdirectory(po)
+
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)

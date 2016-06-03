@@ -1,0 +1,13 @@
+[Desktop Entry]
+MimeType=application/x-rpm;application/x-deb;
+GenericName=Install selected software on the system
+GenericName[zh_CN]=软件包安装程序
+Name=iSOFT Package Installer
+Name[zh_CN]=普华软件包安装程序
+Icon=applications-other
+Exec=/usr/bin/isoft-package-installer %U
+Type=Application
+Terminal=false
+StartupNotify=true
+InitialPreference=10
+NoDisplay=true
